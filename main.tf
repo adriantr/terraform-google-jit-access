@@ -134,7 +134,7 @@ resource "google_cloud_run_service" "jit" {
           value = ".*"
         }
         env {
-          name  = "BACKEND_SERVICE_ID"
+          name  = "IAP_BACKEND_SERVICE_ID"
           value = google_compute_backend_service.jit.generated_id
         }
       }
